@@ -1,0 +1,261 @@
+.foot {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  background-color: $subject-text-color;
+}
+
+.foot__container {
+  display: flex;
+
+  gap: 60px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.foot__basement {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.foot__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.adress__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.foot__page {
+  color: $caption-text-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $logo-text-color;
+  }
+}
+
+.foot__item {
+  color: $item-text-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
+
+  &:hover,
+  &:focus {
+    color: $logo-text-color;
+  }
+}
+
+.foot__title {
+  list-style: none;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $caption-text-color;
+  margin-bottom: 20px;
+}
+
+.foot__text {
+  display: flex;
+  gap: 10px;
+}
+
+.foot__social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foot__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: $logo-text-color;
+    color: $caption-text-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.foot__icon {
+  fill: $caption-text-color;
+}
+
+.logo__foot {
+  color: $caption-text-color;
+}
+
+.foot__caption {
+  color: $caption-text-color;
+}
+
+/*----------------------------------FOOTER FORM---------------------------------------*/
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+
+.footer__list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $caption-text-color;
+  margin-bottom: 20px;
+}
+
+.footer__email {
+  width: 450px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: #2f303a;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $caption-text-color;
+
+  &:focus,
+  &:focus {
+    outline: #2196f3 solid 1px;
+  }
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin: auto;
+  }
+}
+
+.footer__submit {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.footer__bth {
+  align-self: flex-end;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $caption-text-color;
+  background: $logo-text-color;
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__icon {
+  fill: $caption-text-color;
+  align-items: center;
+}

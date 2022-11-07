@@ -1,0 +1,85 @@
+.pic__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pic__item {
+  width: 370px;
+  height: 404px;
+  background: $caption-text-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.pic__list .list {
+  color: $lead-text-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.pic__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.pic__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $caption-text-color;
+  background-color: $logo-text-color;
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform $ms-text-transition;
+}
+
+.pic__description {
+  border: 1px solid #ececec;
+  padding: 20px 24px;
+}
+
+.pic__name {
+  color: $link-tex-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards-list .title {
+  color: $link-tex-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.pic__item:hover .pic__text {
+  transform: translateY(0);
+}
+
+.pic__link {
+  display: block;
+}
+
+.list {
+  text-decoration: none;
+}

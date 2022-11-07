@@ -1,0 +1,301 @@
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  background: $caption-text-color;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.data-modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $caption-text-color;
+  &-modal-close:hover,
+  &-modal-close:focus {
+    border-color: #000000;
+  }
+
+  &-modal-close:hover .icon-close,
+  &-modal-close:focus .icon-close {
+    fill: $logo-text-color;
+  }
+}
+
+.data-modal-close:hover .icon-close,
+.data-modal-close:hover .icon-close {
+  fill: $logo-text-color;
+}
+
+.data-modal-close {
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $caption-text-color;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-close {
+  color: #000000;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: $link-tex-color;
+}
+
+/*----------------MODAL FORM---------------------*/
+.modal__field {
+  margin-bottom: 10px;
+}
+
+.modal__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $auth-nav-text-color;
+  display: block;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.modal__wrap {
+  position: relative;
+  margin-top: 4px;
+}
+
+.modal__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &:focus + .modal__icon {
+    fill: $logo-text-color;
+  }
+
+  &:focus,
+  &:focus {
+    outline: $logo-text-color solid 1px;
+  }
+}
+
+.modal__icon {
+  bottom: 14px;
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*-----------------MODAL FORM AND--------------------*/
+
+/*-----------------MODAL-CHECKBOX-------------------*/
+.modal__title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.modal__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $auth-nav-text-color;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  justify-content: center;
+
+  & a {
+    color: $logo-text-color;
+  }
+}
+
+.input-check:checked + .modal__name span {
+  background-color: $logo-text-color;
+  border-radius: 2px;
+}
+
+.input-check:checked + .modal__name .check__icon {
+  fill: $caption-text-color;
+  border: none;
+}
+
+.check__icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  & {
+    fill: transparent;
+  }
+}
+
+.modal__gabarit {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  margin-bottom: 20px;
+
+  &:focus,
+  &:focus {
+    outline: $logo-text-color solid 1px;
+  }
+}
+
+.modal__icon {
+  bottom: 14px;
+  left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*-----------------MODAL-CHECKBOX  AND-------------------*/
+
+/*-----------------MONDAL-BUTOON-----------------------*/
+.mondal__buttons {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 712px;
+
+  background: $logo-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: auto;
+}
+
+.mondal__bth {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: auto;
+
+  color: $caption-text-color;
+  background-color: $logo-text-color;
+  border: $logo-text-color;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  padding-right: 52px;
+}
+/*----------------------MONDAL-BUTOON AND--------------------------*/
+
+/*-------------------MONDAL-CLOSE-----------------------*/
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  background: $caption-text-color;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/*-----------------MONDAL-CLOSE AND---------------------------*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms linear, visibility 500ms;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
