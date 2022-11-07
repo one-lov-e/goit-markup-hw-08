@@ -9,6 +9,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+
+    transform: scale(1);
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .data-modal-close {
@@ -73,6 +89,10 @@
   margin-bottom: 12px;
 
   color: $link-tex-color;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 /*----------------MODAL FORM---------------------*/
@@ -117,6 +137,11 @@
   &:focus {
     outline: $logo-text-color solid 1px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal__icon {
@@ -158,6 +183,11 @@
 
   & a {
     color: $logo-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -298,4 +328,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  @media screen and (max-width: 1199px) {
+    transform: scale(1.2);
+  }
 }
