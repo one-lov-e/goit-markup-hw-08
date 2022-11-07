@@ -12,7 +12,7 @@
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
-  background: #c4c4c4;
+  // background: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/hero-desctop.jpg);
   }
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -36,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/hero-desctop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -45,7 +45,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url();
+        url(../images/hero-desctop.jpg);
     }
   }
 
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url();
+      url(../images/hero-desctop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -63,7 +63,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url();
+        url(../images/hero-desctop.jpg);
     }
   }
 }
