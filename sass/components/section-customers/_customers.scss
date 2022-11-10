@@ -23,6 +23,32 @@
   letter-spacing: 0.03em;
   color: $link-tex-color;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $link-tex-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $link-tex-color;
+    margin-bottom: 50px;
+  }
 }
 
 .customers__list {
@@ -37,17 +63,17 @@
   // height: 98px;
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    width: 480px;
     width: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 768px;
     width: calc((100% - 60px) / 3);
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
     width: calc((100% - 150px) / 6);
   }
 }

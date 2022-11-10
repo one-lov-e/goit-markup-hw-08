@@ -53,7 +53,6 @@
 .thumb__text {
   margin-bottom: 10px;
 
-  text-align: center;
   color: $link-tex-color;
   font-family: "Roboto";
   font-weight: 700;
@@ -61,6 +60,19 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $link-tex-color;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 
 .thumb__lead {

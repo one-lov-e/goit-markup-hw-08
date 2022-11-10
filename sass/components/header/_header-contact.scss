@@ -12,17 +12,27 @@
 
     flex-direction: column;
     gap: 10px;
+
+    font-family: "Roboto";
+    font-style: normal;
+
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     flex-direction: row;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
   }
 }
 
