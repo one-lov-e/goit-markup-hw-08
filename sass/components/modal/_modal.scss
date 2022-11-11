@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  width: 528px;
+  //width: 528px;
   min-height: 581px;
   background: $caption-text-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -11,6 +11,7 @@
   transform: translate(-50%, -50%);
 
   @media screen and (min-width: 480px) {
+    position: absolute;
     width: 450px;
 
     transform: scale(1);
@@ -22,6 +23,11 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -185,6 +191,16 @@
     color: $logo-text-color;
   }
 
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.71;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.71;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -293,8 +309,8 @@
 /*-------------------MONDAL-CLOSE-----------------------*/
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  //width: 528px;
+  //min-height: 581px;
   background: $caption-text-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
